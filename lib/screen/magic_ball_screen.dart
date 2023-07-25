@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surf_practice_magic_ball/screen/magic_ball_screen/magicBall.dart';
+import 'package:surf_practice_magic_ball/screen/magic_ball_screen/magicOval.dart';
 
 class MagicBallScreen extends StatelessWidget {
   const MagicBallScreen({Key? key}) : super(key: key);
@@ -11,8 +12,8 @@ class MagicBallScreen extends StatelessWidget {
           gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [Colors.indigo, Colors.black])),
-      child: Scaffold(
+              colors: [Colors.deepPurple, Colors.black])),
+      child: const Scaffold(
           backgroundColor: Colors.transparent,
           body: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -22,14 +23,11 @@ class MagicBallScreen extends StatelessWidget {
                   Padding(padding: EdgeInsets.only(top: 200)),
                   MagicBallWidget(),
                   Padding(padding: EdgeInsets.only(top: 50)),
-                  ElevatedButton(
-                      onPressed: () {
-                        print("Tap");
-                      }, child: Text("Тут будет овал")),
+                  MagicOval(),
                   Padding(padding: EdgeInsets.only(top: 60)),
                   Text(
                     "Нажмите на шар",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.grey, fontSize: 15),
                   )
                 ],
               )
