@@ -1,0 +1,12 @@
+com.example.surf_practice_chat_flutter.app-debug-0 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\android\app\src\debug\res
+com.example.surf_practice_chat_flutter.app-main-1 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\android\app\src\main\res
+com.example.surf_practice_chat_flutter.app-pngs-2 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\build\app\generated\res\pngs\debug
+com.example.surf_practice_chat_flutter.app-resValues-3 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\build\app\generated\res\resValues\debug
+com.example.surf_practice_chat_flutter.app-rs-4 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\build\app\generated\res\rs\debug
+com.example.surf_practice_chat_flutter.app-mergeDebugResources-5 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.surf_practice_chat_flutter.app-mergeDebugResources-6 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.surf_practice_chat_flutter.app-merged_res-7 C:\Android\AndroidStudioProjects\surf-flutter-study-jam-4\build\app\intermediates\merged_res\debug
+com.example.surf_practice_chat_flutter.app-jetified-window-java-1.0.0-beta04-8 C:\Users\Илья Корнилов\.gradle\caches\transforms-3\5cc32f74b7c5d8c35a5484bd2a59401d\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.surf_practice_chat_flutter.app-core-1.6.0-9 C:\Users\Илья Корнилов\.gradle\caches\transforms-3\8ae08cf79264b672fafdd09aef8527d1\transformed\core-1.6.0\res
+com.example.surf_practice_chat_flutter.app-jetified-annotation-experimental-1.1.0-10 C:\Users\Илья Корнилов\.gradle\caches\transforms-3\b9f225837545f153f6127e3991c83d55\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.surf_practice_chat_flutter.app-jetified-window-1.0.0-beta04-11 C:\Users\Илья Корнилов\.gradle\caches\transforms-3\bdb9d0dbd569762b93299935809ccab5\transformed\jetified-window-1.0.0-beta04\res
