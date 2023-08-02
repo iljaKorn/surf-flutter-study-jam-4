@@ -11,6 +11,7 @@ class MagicBallWidget extends StatefulWidget {
 class _MagicBallWidgetState extends State<MagicBallWidget>
     with SingleTickerProviderStateMixin {
   String ballText = "";
+  bool isMissedMessage = false;
 
   double _scale = 1;
   late AnimationController _animationController;
@@ -37,9 +38,16 @@ class _MagicBallWidgetState extends State<MagicBallWidget>
 
   getData() async {
     var prediction = await ApiService().getPrediction();
-    setState(() {
-      ballText = prediction;
-    });
+    if (prediction == "Error") {
+      setState(() {
+        isMissedMessage = true;
+      });
+    } else {
+      setState(() {
+        ballText = prediction;
+        isMissedMessage = false;
+      });
+    }
   }
 
   void onTapUp(TapUpDetails details) {
@@ -70,20 +78,20 @@ class _MagicBallWidgetState extends State<MagicBallWidget>
           child: Container(
               width: 270,
               height: 270,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.black,
                 shape: BoxShape.circle,
-                image: DecorationImage(
+                image: const DecorationImage(
                     image: AssetImage("assets/images/stars.jpg"),
                     fit: BoxFit.cover),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.black,
+                      color: isMissedMessage ? Colors.red : Colors.black,
                       blurRadius: 15,
                       offset: Offset(6, 6),
                       spreadRadius: 1),
                   BoxShadow(
-                      color: Colors.grey,
+                      color: isMissedMessage ? Colors.red : Colors.grey,
                       blurRadius: 15,
                       offset: Offset(-6, -6),
                       spreadRadius: 1),
