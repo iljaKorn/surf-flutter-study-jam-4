@@ -22,12 +22,12 @@ class MagicBallScreen extends StatelessWidget {
                 children: [
                   Padding(padding: EdgeInsets.only(top: 200)),
                   MagicBallWidget(),
-                  Padding(padding: EdgeInsets.only(top: 50)),
+                  Padding(padding: EdgeInsets.only(top: 80)),
                   MagicOval(),
                   Padding(padding: EdgeInsets.only(top: 60)),
                   Text(
                     "Нажмите на шар",
-                    style: TextStyle(color: Colors.grey, fontSize: 15),
+                    style: TextStyle(color: Colors.grey, fontSize: 20),
                   )
                 ],
               )
